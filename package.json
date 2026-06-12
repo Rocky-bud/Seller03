@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "preinstall": "npm install --package-lock=false",
     "start": "node server.js",
     "dev": "vite",
     "build": "vite build",
@@ -23,7 +24,7 @@
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "ws": "^8.21.0",
-    "react-router-dom": "^6.28.0"
+    "react-router-dom": "^6.30.4"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.0",
