@@ -13,6 +13,8 @@ export default defineConfig({
     }
   },
   build: {
-    outDir: '../dist'
+    outDir: '../dist',
+    sourcemap: false,         // غیرفعال کردن سورس‌مپ برای نجات دادن رم سرور
+    chunkSizeWarningLimit: 1600, // افزایش آستانه هشدار برای سبک شدن پردازش
   }
 });
