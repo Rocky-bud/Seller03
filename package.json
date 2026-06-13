@@ -7,7 +7,7 @@
     "preinstall": "npm install --package-lock=false",
     "start": "node server.js",
     "dev": "vite",
-    "build": "vite build",
+    "build": "node --max-old-space-size=4096 ./node_modules/vite/bin/vite.js build",
     "preview": "vite preview",
     "check": "node scripts/check-syntax.mjs",
     "ci": "npm run check && npm run build",
