@@ -4,14 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "preinstall": "npm install --package-lock=false",
-    "start": "node server.js",
-    "dev": "vite",
-    "build": "node --max-old-space-size=4096 ./node_modules/vite/bin/vite.js build",
-    "preview": "vite preview",
-    "check": "node scripts/check-syntax.mjs",
-    "ci": "npm run check && npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.42.0",
@@ -25,11 +18,5 @@
     "react-dom": "^19.2.6",
     "ws": "^8.21.0",
     "react-router-dom": "^6.30.4"
-  },
-  "devDependencies": {
-    "@tailwindcss/vite": "^4.3.0",
-    "@vitejs/plugin-react": "^6.0.2",
-    "tailwindcss": "^4.3.0",
-    "vite": "^8.0.14"
   }
 }
